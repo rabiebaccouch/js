@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p><br>
+<label > number1</label>
+<input type="number" id="n1"> </input>
+<br>
+<br>
+<label > number2</label>
+<input type="number" id="n2"> </input>
+<br>
+<br>
+<button onclick="add()">+</button>
+<br>
+<br>
+<input type="number" id="nr"> </input>
+
+
+<script>
+function add(){
+var x =parseInt( document.getElementById("n1").value);
+var y = parseInt(document.getElementById("n2").value);
+var z = x + y ;
+	document.getElementById("nr").value = z  ;
+    }
+</script>
+</body>
+</html>
