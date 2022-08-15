@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p><br>
+<label > °C</label>
+<input type="number" id="c" onchange="CTOF()"> </input>
+
+<label > °F</label>
+<input type="number" id="f" onchange="FTOC()"> </input>
+
+
+
+<script>
+function CTOF(){
+var c =parseInt( document.getElementById("c").value);
+var z = (c*9/5) + 32;
+	document.getElementById("f").value = z  ;
+    }
+function FTOC(){
+var f =parseInt( document.getElementById("f").value);
+var z = (f-32)*5/9;
+	document.getElementById("c").value = z  ;
+    }
+</script>
+</body>
+</html>
